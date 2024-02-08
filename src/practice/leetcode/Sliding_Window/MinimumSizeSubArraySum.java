@@ -9,7 +9,6 @@ public class MinimumSizeSubArraySum {
     }
 
     public static int minSubArrayLen(int target, int[] nums) {
-        System.out.println("test");
         int i = 0;
         int j = 0;
         int sum = 0;
