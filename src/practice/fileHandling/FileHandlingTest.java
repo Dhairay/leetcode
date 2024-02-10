@@ -1,7 +1,6 @@
-package practice.anything;
+package practice.fileHandling;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
