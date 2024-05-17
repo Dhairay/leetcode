@@ -19,11 +19,11 @@ public class RotateArray {
         }
     }
 
-    public static void rorateByStep (int [] nums, int num) {
+    public static void rorateByStep (int [] nums, int k) {
         int length = nums.length;
         int []array = new int[length];
         for(int i=0; i<length; i++){
-            array[i] = nums[(length-num+i)%length];
+            array[i] = nums[(length-k+i)%length];
         }
         for (int ii = 0; ii < array.length; ii++) {
 

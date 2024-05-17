@@ -2,7 +2,7 @@ package practice.leetcode.Array_String;
 
 public class StockBuyAndSell_II {
     public static void main(String[] args) {
-        int[] prices = {2, 3, 4, 11, 3, 6, 9};
+        int[] prices = {1,1,1,0};
         System.out.println(maxProfit(prices));
     }
 

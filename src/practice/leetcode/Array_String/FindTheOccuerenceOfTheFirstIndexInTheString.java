@@ -2,8 +2,8 @@ package practice.leetcode.Array_String;
 
 public class FindTheOccuerenceOfTheFirstIndexInTheString {
     public static void main(String[] args) {
-        String hatstack = "sadbutsad";
-        String needle = "sad";
+        String hatstack = "leetcode";
+        String needle = "code";
         System.out.println(strStr(hatstack,needle));
     }
 

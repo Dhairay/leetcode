@@ -2,7 +2,7 @@ package practice.collections;
 import java.io.*;
 class emp implements Serializable{
     Integer empnu=11;
-     Float salary=50000.11f;
+    transient Float salary=50000.11f;
      String s="hello";
 }
 
@@ -20,7 +20,7 @@ public class Serilisation {
             fos.close();
 
             // Here we are doing writing an object from the file
-
+//
            FileInputStream fis=new FileInputStream("emp.txt");
             ObjectInputStream ois=new ObjectInputStream(fis);
             emp e2=(emp)ois.readObject();

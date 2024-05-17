@@ -11,16 +11,19 @@ package practice.leetcode.Array_String;
 public class JumpGame {
 
     public static void main(String[] args) {
-        int[] nums = {1,1,4,5,6};
+        int[] nums = {2,3,0,1,4};
         System.out.println(canJump(nums));
 
     }
 
     public static boolean canJump(int[] nums) {
         int reach = 0;
-        for (int i = 0; i <=reach; i++) {
-            reach = Math.max(reach, i + nums[i]);
-            if (reach >= i + nums.length - 1) {
+        for (int i = 0; i < nums.length; i++) {
+            if (i > reach) {   // If current index is not reachable, return false
+                return false;
+            }
+            reach = Math.max(reach, nums[i] + i);
+            if (reach >= nums.length - 1) {
                 return true;
             }
         }
